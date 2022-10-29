@@ -1,3 +1,28 @@
+/*移动端去掉横向滚动条*/
+html {
+  overflow-y: scroll;
+}
+ 
+:root {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+ 
+:root body {
+  position: absolute;
+}
+ 
+body {
+  width: 100vw;
+  overflow: hidden;
+  
+}
+
+/*end*/
+
+
+
+
 .home-banner {
   /* background: url(https://static.coinall.ltd/cdn/assets/imgs/228/0E3B4D528AF8F2B9.png) no-repeat; */
   /* background-position: right 2px; */
@@ -312,7 +337,9 @@
 
 
 @media (max-width: 768px) {
-  
+  .module-container {
+    width:100%;
+  }
   .home-banner {
     /* background: url(https://static.coinall.ltd/cdn/assets/imgs/227/00FD2A873434DE59.png) no-repeat; */
     background-position: right 0;
@@ -2077,7 +2104,8 @@
     left: 50%;
 }
 .home-holding-box-bg{
-    width:30rem;
+    /* width:30rem; */
+    width:32rem;
     height: 196px;
 }
 .home-holding-box-bg  .circle_small_g{
@@ -2100,7 +2128,8 @@
     width: 2.5rem;
     position: absolute;
     right: 0rem;
-    top: -5rem;
+    /* top: -5rem; */
+    top:-20rem;
 }
 
 
@@ -2333,7 +2362,7 @@
     width: 1.5rem;
     position: absolute;
     left: 8rem;
-    top: 27rem;
+    top: 28rem;
   }
   .home-exchange .home-exchange-content .investment-image .circle_small_r {
     width: 1.5rem;
@@ -2379,7 +2408,9 @@
     position: relative;
     height: 34rem;
   }
-
+  .home-holding .home-holding-box-bg{
+    width: 30rem;
+  }
   .home-holding .home-holding-bg .group-img03 {
     position: absolute;
     width: 41rem;
@@ -2871,8 +2902,8 @@
     .home-incubator .circle_small_y {
       width: 1.5rem;
       position: absolute;
-      bottom: 0rem;
-      left: -1.3rem;
+      top: 16rem;
+      left: -1.8rem;
     }
     .home-incubator .circle_small_g {
       width: 3rem;
@@ -2880,19 +2911,20 @@
       bottom: -4rem;
       right: 4rem;
     }
-  }
-  .home-incubator .incubator-title .incubator-title-subtitle {
-    color: hsla(0, 0%, 100%, 0.8);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    /* width: 310px; */
-    width: 90%;
-    margin: 0 auto;
-  }
+  
+  
 
 
+}
+.home-incubator .incubator-title .incubator-title-subtitle {
+  color: hsla(0, 0%, 100%, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  /* width: 310px; */
+  width: 90%;
+  margin: 0 auto;
 }
 @media (min-width: 1024px) {
   .home-incubator .incubator-title .incubator-title-subtitle {
